@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https:   //fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Films</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <select class="form-select w-25 mx-3 mySelect" aria-label="Default select example">
+                 <option value="Action" class="myOption">Action</option>
+                <option value="Comedy" class="myOption">Comedy</option>
+                <option value="Fantasy" class="myOption">Fantasy</option>
+                <option value="Adventure" class="myOption">Adventure</option>
+                <option value="Science Fiction" class="myOption">Science Fiction</option>
+                <option value="Thriller" class="myOption">Thriller</option>
+                <option value="Horror" class="myOption">Horror</option>
+                <option value="Animation" class="myOption">Animation</option>
+                <option value="Family" class="myOption">Family</option>
+                <option value="Adventure" class="myOption">Adventure</option>
+                <option value="Documentary" class="myOption">Documentary</option>
+              </select>
+              <button type="button" class="btn btn-danger myBtn" onclick="actionFunc(films)">Filtr</button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <form class="d-flex" id="elForm">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input">
+              <a class="btn btn-outline-danger" onclick="RegexFunc(films)">Search</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
+<div class="container">
+    
+    <ul id="listParent" class="row">
+    </ul>
+</div>
+
+<div class="modal">
+  <div class="modal__content bouncrInDown">
+    <button class="btn">
+      <i class="fas fa-itmes-cricle icon"></i>
+    </button>
+    <img src="" alt="film-img" class="modal__img">
+    <div class="modal__write">
+      <h3 class="modal__title"></h3>
+      <p class="info">#Info</p>
+      <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, consequatur nam? Id vel unde quae? Blanditiis quod laborum ipsa numquam ducimus, eveniet aperiam labore consectetur?</p>
+      <p class="modal__ganre"></p>
+      <button class="modal__download">Dowmload</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="./script.js"></script>
+
+</body>
+</html>
